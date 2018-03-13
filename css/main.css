@@ -1,0 +1,45 @@
+
+
+/* ------ Global Styling ------- */
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+
+.page {
+	max-width: 1440px;
+	width: 100%;
+}
+
+.header  {
+	background: #eee;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container .logo {
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.container ul {
+	list-style: none;
+	margin: 0;
+}
+
+
+.container ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
