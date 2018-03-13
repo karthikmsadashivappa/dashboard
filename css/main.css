@@ -96,6 +96,34 @@ html {
     }
 }
 
+.btn-save {
+    background-color: #006AFF;
+    box-shadow: 0 4px 0 0 #006AFF;
+    color: #fff;
+    margin-top: 20px;
+    &:hover {
+        background-color: #47C678;
+        color: #fff;
+    }
+    &:active {
+        box-shadow: inset 0 1px 0 0 #47C678;
+    }
+}
+
+.btn-cancel {
+    background-color: #BF202C;
+    box-shadow: 0 4px 0 0 #BF202C;
+    color: #fff;
+    margin-top: 20px;
+    &:hover {
+        background-color: #47C678;
+        color: #fff;
+    }
+    &:active {
+        box-shadow: inset 0 1px 0 0 #47C678;
+    }
+}
+
 
 .entry table tr {
     box-shadow: 0 4px 4px -4px rgba(0,0,0,0.2);
@@ -111,6 +139,49 @@ html {
 
 .entry-actions i {
 	padding-right: 4px;
+}
+
+.modal {
+	display: table;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.modal_dialog {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.modal_content {
+	background: #57B695;
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+	max-width: 600px;
+	color: white;
+	position: relative;
+	animation: slideUp 0.3s ease-in-out;
+}
+
+.modal_close {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+}
+
+.modal:target {
+	display: table;
+}
+
+input {
+	display: inline-block;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 4px;
 }
 
 @media all and (max-width: 600px) {
@@ -137,4 +208,16 @@ html {
 	}
 }
 
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		bottom: -200px;
+	}
+
+	to {
+		opacity: 1;
+		bottom: 0;
+	}
+}
 

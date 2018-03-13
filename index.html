@@ -33,7 +33,26 @@
 
 	<section id="main">
 		<div class="entry">
-			<a href="#" class="button btn-standard">Create new incident</a>
+			<a href="#modal" class="button btn-standard modal_trigger">Create new incident</a>
+			<div class="modal" id="modal">
+				<div class="modal_dialog">
+					<div class="modal_content">
+						<a href="#" class="modal_close">&times;</a>
+						<h1>Add Incident</h1>
+						<form action="#">
+							<input type="text" placeholder="Location">
+							<input type="textarea" placeholder="textarea">
+							<input type="text" placeholder="start">
+							<input type="text" placeholder="end">
+						<div class="buttons">
+							<button class="button btn-cancel">Cancel</button>
+							<button class="button btn-save">Save</button>
+						</div>
+						</form>
+					</div>
+					
+				</div>
+			</div>
 			<table cellpadding="15px" class="data">
 				<thead>
 					<td>Location</td>
@@ -56,6 +75,34 @@
 							<i class="fa fa-trash" aria-hidden="true"></i>
 						</td>
 					</tr>
+
+					<tr>
+						<td>A28 173</td>
+						<td>Accident</td>
+						<td class="entry-actions">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+							<i class="fa fa-trash" aria-hidden="true"></i>
+						</td>
+					</tr>
+
+					<tr>
+						<td>A28 173</td>
+						<td>Accident</td>
+						<td class="entry-actions">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+							<i class="fa fa-trash" aria-hidden="true"></i>
+						</td>
+					</tr>
+
+					<tr>
+						<td>A28 173</td>
+						<td>Accident</td>
+						<td class="entry-actions">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+							<i class="fa fa-trash" aria-hidden="true"></i>
+						</td>
+					</tr>
+
 				</tbody>
 			</table>
 		</div>
