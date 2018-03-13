@@ -50,19 +50,91 @@ html {
 
 .entry {
 	flex:1;
-	height: 100%;
 }
 
 .map {
-	flex:3;
+	flex: 4;
+}
+
+.button {
+	background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    white-space: nowrap;
+    transition: ease;
+    
+    padding: 7px 24px;
+    
+    &:active,
+    &:focus {
+        outline: none;
+    }
+    &:disabled {
+        opacity: 0.6;
+    }
+    &:active {
+        transform: translateY(1px);
+    }
+}
+
+.btn-standard {
+    background-color: #89D79B;
+    box-shadow: 0 4px 0 0 #86D295;
+    color: #fff;
+    margin-top: 20px;
+    &:hover {
+        background-color: #47C678;
+        color: #fff;
+    }
+    &:active {
+        box-shadow: inset 0 1px 0 0 #47C678;
+    }
+}
+
+
+.entry table tr {
+    box-shadow: 0 4px 4px -4px rgba(0,0,0,0.2);
+}
+
+.entry {
+	text-align: center;
 }
 
 .entry a{
 	text-decoration: none;
-	padding: 10px;
-	background: #0FC9EA;
-	border-radius: 4px;
-	color: white;
+}
+
+.entry-actions i {
+	padding-right: 4px;
+}
+
+@media all and (max-width: 600px) {
+	#main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	.entry {
+		width: 100%;
+		text-align: center;
+		margin: 10px;
+	}
+
+	.entry table {
+		margin: auto;
+		padding-top: 20px;
+	}
+
+	.map {
+		width: 100%;
+	}
 }
 
 
