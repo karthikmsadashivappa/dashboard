@@ -7,6 +7,11 @@ html {
 	padding: 0;
 }
 
+body {
+	padding: 0;
+	margin: 0;
+}
+
 *, *:after, *:before {
 	box-sizing: border-box;
 }
@@ -42,6 +47,40 @@ html {
 .container ul li {
 	display: inline-block;
 	margin-right: 10px;
+	padding: 5px;
+	position: relative;
+	cursor: pointer;
+}
+
+.container ul li i {
+	padding-left: 10px;
+}
+
+ul.sub-menu {
+	position: absolute;
+	width: 100%;
+	padding-left: 0px;
+	margin-left: -1px;
+	background: #FFFAB7;
+	opacity: 0;
+}
+
+label{
+	margin: 0 40px 0 0;
+	font-size: 20px;
+	line-height: 50px;
+	display: none;
+}
+
+#toggle {
+	display: none;
+}
+/*ul.sub-menu li {
+	padding: 5px 10px;
+}
+*/
+.links li:hover .sub-menu {
+	opacity: 1;
 }
 
 #main {
@@ -49,11 +88,11 @@ html {
 }
 
 .entry {
-	flex:1;
+	flex:2;
 }
 
 .map {
-	flex: 4;
+	flex:5;
 }
 
 .button {
@@ -69,6 +108,7 @@ html {
     transition: ease;
     
     padding: 7px 24px;
+    margin-bottom: 20px;
     
     &:active,
     &:focus {
@@ -124,6 +164,12 @@ html {
     }
 }
 
+.entry table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	padding: 1rem;
+}
 
 .entry table tr {
     box-shadow: 0 4px 4px -4px rgba(0,0,0,0.2);
@@ -188,9 +234,17 @@ input {
 	#main {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 	}
 
+	.links {
+		display: block;
+	}
+
+	.container ul {display: flex;
+		flex-direction: column-reverse;
+		padding-left: 0;
+		text-align: right;
+	}
 
 	.entry {
 		width: 100%;
